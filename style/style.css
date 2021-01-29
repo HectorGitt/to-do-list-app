@@ -44,6 +44,21 @@ form {
     flex-direction: row;
     
 }
+.help {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20pt;
+    
+}
+.help > h3 {
+    margin: none;
+    padding: none;
+    display: inline;
+}
+.help p {
+    margin-top:10px ;
+    font-size: 10pt;
+}
 #add {
     padding: 15px 25px;
     justify-items: end;
@@ -56,13 +71,14 @@ form {
     box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.933), 2px 2px 4px rgb(215, 199, 199);
 }
 input {
-    font-size: 100%;
+    font-size: 16pt;
     width: 80vw;
     background-color: white;
     color: black;
     border-radius: 10px;
     border: none;
     box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.933) inset, 2px 2px 4px rgb(215, 199, 199) inset;
+    padding-left: 10px;
 }
 #remove {
     background-color: transparent;
@@ -76,9 +92,7 @@ input {
 .list {
     width: 70%;
 }
-h3 {
-    font-size: 100%;
-}
+
 .list > *:nth-of-type(even){
     background-color: rgba(34, 255, 0, 0.055);
 }
@@ -89,9 +103,22 @@ h3 {
     display: inline;
 }
 .list li {
-    padding: 20px;
+    padding: 15px;
     margin: 20px;
     box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.933), 2px 2px 4px rgb(215, 199, 199) ;
     background-color:transparent;
     
+}
+@media only screen and (max-width: 550px ) {
+    #add {
+        padding: 6px 13px;
+    }
+    input {
+        font-size: 10pt;
+    }
+    .list li {
+        padding: 10px;
+    }
+
+
 }
